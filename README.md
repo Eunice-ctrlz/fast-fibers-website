@@ -11,8 +11,6 @@ Fast Fibres is dedicated to delivering reliable internet connectivity and secure
 - Router and signal booster setup
 - Smart home networking
 
----
-
 *Features of the Website*
 
 - Clean, responsive design
@@ -27,14 +25,15 @@ Fast Fibres is dedicated to delivering reliable internet connectivity and secure
 - JavaScript
   *Project Structure*
 
-Wifi-Website/
+*Wifi-Website*
+
 ├── index.html
 ├── about.html
 ├── contact.html
 ├── services.html
-├── css/
+├── css
 │   └── style.css
-├── js/
+├── js
 │   └── main.js
-└── images/
+└── images
     └── [your images here]
