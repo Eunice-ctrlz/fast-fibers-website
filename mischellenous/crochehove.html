@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crochet cove</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <h1>CROCHET COVE.</h1>
+ <br>
+ <h2>YOUR HANDMADE SPECIALTY</h2>     
+<img id="categoriesImage" src="screenshot.png" alt="crochet image" width="500" height="300">
+    <img id="yarnsImage" src="" alt="screenshot2.png" width="500" height="300" style="display:none;">
+    <img id="sizesImage" src="" alt="screenshot3.png" width="500" height="300" style="display:none;">
+    <img src="screenshot.png" alt="screenshot.png" width="1500" height="1000">
+    <br>
+    <label for="Categories">Categories</label>
+    <select id="Categories" name="Categories">
+        <option value="blankets">Blankets</option>
+        <option value="clothing">Clothing</option>
+        <option value="accessories">Accessories</option>
+
+    </select>
+        <label for="yarns">yarns</label>
+        <select id="yarns" name="yarns">
+            <option value="cotton">Cotton</option>
+            <option value="wool">Wool</option>
+            <option value="acrylic">Acrylic</option>
+            <option value="blend">Blend</option>
+        </select>
+            <label for="sizes">Sizes</label>
+            <select id="sizes" name="sizes">  
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="extra-large">Extra Large</option>
+            </select>
+            <label for="price">Price</label>
+            <select id="price" name="price">    
+                <option value="under-20">Under $20</option>
+                <option value="20-50">$20 - $50</option>
+                <option value="50-100">$50 - $100</option>
+                <option value="over-100">Over $100</option>
+            </select>
+                <label for="sort">Sort By</label>
+                <select id="sort" name="sort">      
+                    <option value="newest">Newest</option>
+                    <option value="oldest">Oldest</option>
+                    <option value="price-low-high">Price: Low to High</option>
+                    <option value="price-high-low">Price: High to Low</option>
+                </select>
+    <form>
+        <input type="date" id="date" name="date">
+<br><br>
+    <label for="fname">First Name:</label>
+    <input type="text"id="fname" name ="fname">
+    <br><br>
+    <label for="lname">Last Name:</label>
+    <input type="text"id="lname" name ="lname">
+<br><br>
+<label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+    <br><br>
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone">
+    <br><br>
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="6" cols="20"></textarea>
+    <br><br>
+<input type="submit" value = "Submit">
+
+    </form>
+    <br>
+    <script>
+        const categoriesSelect=document.getElementById('categoriesSelect');
+        const categoriesImage = document.getElementById('categoriesImage');
+         categoriesSelect.addEventListener('change', function() {
+    const value = this.value;
+
+    if (value === 'blankets') {
+      categoriesImage.src = 'screenshot.png';
+      categoriesImage.style.display = 'block';
+    } else if (value === 'clothing') {
+      categoriesImage.src = 'screenshot2.png';
+      categoriesImage.style.display = 'block';
+    } else if (value === 'accesories') {
+      categoriesImage.src = 'screenshot3.png';
+ } else if (value === 'blend') {
+      categoriesImage.src = 'screenshot.png';
+      categoriesImage.style.display = 'block';
+    } else 
+      categoriesImage.style.display = 'none';
+  });
+
+        const yarnsSelect = document.getElementById('yarnsImage');
+
+         yarnsSelect.addEventListener('change', function() {
+    const value = this.value;
+
+    if (value === 'cotton') {
+      yarnsImage.src = 'screenshot.png';
+      yarnsImage.style.display = 'block';
+    } else if (value === 'wool') {
+      yarnsImage.src = 'screenshot2.png';
+      yarnsImage.style.display = 'block';
+    } else if (value === 'acrylic') {
+      yarnsImage.src = 'screenshot3.png';
+      yarnsImage.style.display = 'block';
+    } else {
+      yarnsImage.style.display = 'none';
+    }
+});
+
+const sizesSelect = document.getElementById('sizesSelect');
+        const sizesImage = document.getElementById('sizesImage');
+         animalSelect.addEventListener('change', function() {
+    const value = this.value;
+
+    if (value === 'small') {
+      sizesImage.src = 'screenshot.png';
+      sizesImage.style.display = 'block';
+    } else if (value === 'medium') {
+      sizesImage.src = 'screenshot2.png';
+      sizesImage.style.display = 'block';
+      } else if (value === 'large') {
+      sizesImage.src = 'screenshot3.png';
+ } else if (value === 'exra-large') {
+      sizesImage.src = 'screenshot.png';
+      sizesImage.style.display = 'block';
+    } else {
+      sizesImage.style.display = 'none';
+    }
+  });
+
+    </script>
+        
+    
+
+    <footer>
+        <p>© 2023 Crochet Cove. All rights reserved.</p>
+        <p>Follow us on social media: </p>
+            <a href="https://www.instagram.com/my_crochetcove" target="_blank">Instagram</a> | 
+            <a href="https://www.facebook.com/crochetcove" target="_blank">Facebook</a>
+</footer>
+
+    
+</body>
+</html>

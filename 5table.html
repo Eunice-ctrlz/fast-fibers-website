@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type = "number"  id="numinput">
+    <button id = "generateBtn" onclick = "generateTable()">Generate</button>
+        table border = "1"
+    </thead>
+    <tr>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+    </tr>
+</thead>
+<t body id = "tablebody"></body>
+</table>
+    <script>
+        function generateTable() {
+            let num = document.getElementId("num input")+value;
+            let tableBody = document.getElementById("table Body");
+            let button = document.getElementById("generate Btn")
+            
+            tableBody.innerHTML;
+            if(num<=0) {
+                alert ("please enter a valid positive number!");
+                return;
+            }
+            for (let i = 1;i<=num;i++)
+            tableBody.innerHTML+=("<tr><td>")+num+("</td></td></td><td>")+i+("</td><td>=</td><td>")+num*i+("</td></tr>");
+
+        }
+        document.body.bgColor ="yellow";
+        button.disabled=true;
+    
+
+
+        </script>
+</body>
+</html>

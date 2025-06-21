@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let price=parseFloat(prompt("Enter price of item:"));
+  let ItemName;
+        switch (true){
+            case (price <=100 && price >=80):
+                document.write("Kebab");
+                break;
+            case (price <=79 && price >=70):
+                document.write("Samosa");
+                break;
+            case (price <=69 && price >=49):
+                document.write("Smocha");
+                break;
+            case (price <=39 && price > 0):
+             document.write("IcePop");
+                break;
+                default:
+                    document.write("Please enter a valid price.");
+        }
+
+
+
+    </script>
+</body>
+</html>
