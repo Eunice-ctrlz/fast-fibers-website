@@ -1,11 +1,11 @@
 body{
-    background-color:black;
-    color: beige;
-    font-family: times new roman;
-    font-size: 20px;
-     padding: 0px;              
-      margin: 0;                   
-      
+  background-image:url("wifi3.jpg");
+  color: beige;
+  font-family: times new roman;
+  font-size: 30px;
+  padding: 0px;              
+  margin: 0;  
+  font-weight: bold;       
     }
 
 .subscribe-button {
@@ -63,5 +63,43 @@ body{
   cursor: pointer;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 2px 10px rgba(238, 227, 227, 0.05);
+    
+    }
+ nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color:black;
+      font-weight: bold;
+      font-size: medium;
+    }
+nav a:hover {
+        color:red;
+        font:underline;
+}
+    .header {
+      text-align: center;
+      font-size: 30px;
+      font-weight: bolder;
+
+    }
+.h1 , h2 {
+  text-align: center;
+}
+
+
+.header img{
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
 
  
