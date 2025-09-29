@@ -7,7 +7,8 @@ html, body{
   margin: 0;  
   font-weight: bold;  
   height:100%;
-  width:100%;     
+  width:100%; 
+  overflow-x: hidden;    
     }
 
 .subscribe-button {
@@ -105,9 +106,9 @@ nav a:hover {
       margin-bottom: 10px;
     }
     .box {
+      height:auto;
      flex: 1 1 30%;
     min-width: 250px;
-    max-width: 350px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -125,17 +126,20 @@ nav a:hover {
 img {
   width:100%;
   display:block;
-  height: 100vh;
+  height: auto;
   max-width: 400px;
-  max-height:300px ;
+  max-height:300px;
   border-radius:10px;
   object-fit:contain;
 align-content: center;
 
 }
 .bouncy-img {
+  max-width: 100%;
+  display: block;
+  height:auto;
   border-radius:10px;
-  object-fit:cover;
+  object-fit:contain;
   animation: bounce 1.5s ease;
   margin: 10px;
 }
@@ -182,6 +186,11 @@ align-content: center;
 
     .arrow.rotate {
       transform: rotate(180deg);
+    }
+    @media (max-width: 768px) {
+      .nav {
+        flex-direction: column;
+      }
     }
 
  
