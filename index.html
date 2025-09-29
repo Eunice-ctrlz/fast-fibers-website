@@ -14,7 +14,8 @@
 <li><a href="services.html" style="color:white">Services</a></li>
 <li><a href="contact.html" style="color:white">Contact Us</a></li>
 </ul>
-<img src="IMG_0255.JPG" height="200"width="200" alt="workers pic">
+
+<img src="banner.jpg" alt="banner pic" class="bouncy-img">
 </div>
 </nav>
     <br>
@@ -34,52 +35,75 @@
     </select>
     <div id="basic" class="plan-details">
         <img src ="basic.jpeg" alt="Basic Plan" style="width:300px;height:200px;">
+        <div class = "box">
+          <ul>
         <h2>Basic Plan</h2>
-        <p>Speed: Up to 5 Mbps</p>
-        <p>Ideal for light users who browse and stream in HD.</p>
-        <p>Charges: 1500 kshs per month</p>
+        <li><p>Speed: Up to 5 Mbps</p></li>
+        <li><p>Ideal for light users who browse and stream in HD.</p></li>
+        <li><p>Charges: 1500 kshs per month</p></li>
+        </div>
+      </ul>
         <div class ="basic-plan">
       
     </div>
     </div>
     <div id="standard" class="plan-details">
+      
      <img src ="standard.jpeg" alt="Standard Plan" style="width:300px;height:200px;">
+     <div class = "box">
+      <ul>
      <h2>Standard Plan</h2>
-        <p>Speed: Up to 10 Mbps</p>
-        <p>Perfect for families with multiple devices streaming and gaming.</p>
-        <p>charges: 2000 kshs per month</p>
+     
+       <li> <p>Speed: Up to 10 Mbps</p></li>
+        <li><p>Perfect for families with multiple devices streaming and gaming.</p></li>
+        <li><p>charges: 2000 kshs per month</p></li>
         <div class ="standard-plan">
-       
+          </ul>
+       </div>
         </div>
         </div>
     <div id="premium" class="plan-details">
+      
         <img src="premium.jpeg" alt="Premium Plan" style="width:300px;height:200px;">
+        <div class = "box">
+          <ul>
         <h2>Premium Plan</h2>
-        <p>Speed: Up to 15 Mbps</p>
-        <p>Great for heavy users who stream in 4K and game online.</p>
-        <p>Charges 2500 ksh per month </p>
+        
+        <li><p>Speed: Up to 15 Mbps</p></li>
+        <li><p>Great for heavy users who stream in 4K and game online.</p></li>
+        <li><p>Charges 2500 ksh per month </p></li>
+        </ul>
         <div class ="premium-plan">
-     
+     </div>
     </div>
     </div>
     <div id="ultra" class="plan-details">
         <img src="ultra.jpeg" alt="Ultra Plan" style="width:300px;height:200px;">
+        <div class = "box">
+           <ul>
         <h2>Ultra Plan</h2>
-        <p>Speed: Up to 20 Mbps</p>
-        <p>Best for businesses and power users needing maximum speed.</p>
-        <p>Charges 3500 ksh per month</p>
+        <li><p>Speed: Up to 20 Mbps</p></li>
+        <li><p>Best for businesses and power users needing maximum speed.</p></li>
+       <li><p>Charges 3500 ksh per month</p></li>
+       </ul>
         <div class ="ultra-plan"> 
+        </div>
         </div>
         </div>
     <div id="premium ultra" class="plan-details">
         <img src="premium-ultra.jpeg" alt="Premium Ultra Plan" style="width:300px;height:200px;">
+        <div class = "box">
+         <ul>
         <h2>Premium Ultra Plan</h2>
-        <p>Speed: Up to 30 mbps</p>
-        <p>Ultimate speed for large households and enterprises.</p>
-        <p>Charges 4000 ksh per month</p>
+        <li><p>Speed: Up to 30 mbps</p></li>
+        <li><p>Ultimate speed for large households and enterprises.</p></li>
+        <li><p>Charges 4000 ksh per month</p></li>
+        </ul>
         <div class ="premium ultra-plan">
           </div>
           </div>
+          </div>
+      </div>
 <script>
     function updatePlanDetails() {
         const speedSelect = document.getElementById('internet-speed');
@@ -111,7 +135,7 @@ window.onload = updatePlanDetails;
     <br>
     <br>
     <br>
-    <button type="Paypal" class="paypal-button" onclick="showPaymentLabel('Paypal')">Paypal</button>
+    <button type="AirtelMoney" class="AirtelMoney-button" onclick="showPaymentLabel('AirtelMoney')">Airtel money</button>
     <button type="Mpesa"class="mpesa-button" onclick="showPaymentLabel('Mpesa')">Mpesa</button>
     <br>
     <br>
@@ -159,14 +183,24 @@ function showPaymentLabel(paymentMethod) {
         } else {
             label.innerText = `Mpesa payment cancelled (no amount entered).`;
         }
+      }
+          if (paymentMethod === "AirtelMoney") {
+            const amount = prompt("Enter the amount to pay:");
+              if (amount) {
+
+              }
+              const pin = prompt("Enter your Airtel Money PIN:");
+              if (pin) {
+                  label.innerText = `Please complete the transaction on your Airtel Money app.`;
+              } else {
+                  label.innerText = `Airtel Money payment cancelled (no amount entered).`;
+        }
     } else {
         label.innerText = `You selected ${paymentMethod} as your payment option.`;
     }
     label.style.display = "block";
-  }
+}
     </script>
-</body>
-</html>
 
 <br>
 <br>

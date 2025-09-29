@@ -23,9 +23,10 @@ body{
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
   animation: bounce 2s infinite;
+  display:flex;
+
  
 }
-
 .subscribed{
   background-color: grey;
   color: black
@@ -49,12 +50,12 @@ body{
   cursor: pointer;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-.paypal-button {
+.AirtelMoney-button {
   display: inline-block;
   text-decoration: none;
   text-align: center;
-  background-color: rgb(0, 64, 255);
-  color: black;
+  background-color: red;
+  color: white;
   font-size: 18px;
   padding: 14px 28px;
   border: none;
@@ -72,7 +73,7 @@ nav{
       box-shadow: 0 2px 10px rgba(238, 227, 227, 0.05);
     
     }
- nav a {
+ nav a{
       margin: 0 15px;
       text-decoration: none;
       color:black;
@@ -100,6 +101,83 @@ nav a:hover {
       border-radius: 50%;
       object-fit: cover;
       margin-bottom: 10px;
+    }
+    .box {
+     flex: 1 1 30%;
+    min-width: 250px;
+    max-width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(0, 106, 156, 0.568);
+    color:white;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    margin: 0 auto;
+    max-width: 400px;
+    width:100%;
+    }
+img {
+  height: auto;
+  width: 400;
+  max-height:300px ;
+  border-radius:10px;
+  object-fit:contain;
+align-content: center;
+
+}
+.bouncy-img {
+  border-radius:10px;
+  object-fit:cover;
+  animation: bounce 1.5s ease;
+  margin: 10px;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+.collapsible {
+      background:whitesmoke;
+      cursor: pointer;
+      padding: 12px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 5px;
+    }
+    
+    .content {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 16px;
+      background-color: rgba(7, 7, 67, 0.457);
+      padding: 2px;
+      display: none;
+      border: 1px solid #ddd;
+      border-top: none;
+    }
+
+    .arrow {
+      transition: transform 0.3s ease;
+    }
+
+    .arrow.rotate {
+      transform: rotate(180deg);
     }
 
  
